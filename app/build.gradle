@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.hari.asus.sleep"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven { url "https://jitpack.io" }
+    google()
+    jcenter()
+
+}
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-firestore:17.1.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.0.9'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:4.3.2'
+    implementation 'com.google.android.exoplayer:exoplayer:2.10.8'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.8'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.8'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.10.8'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.10.8'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.8'
+    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    implementation 'net.colindodd:gradientlayout:1.2'
+}

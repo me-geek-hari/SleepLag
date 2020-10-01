@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "445846667535",
+    "firebase_url": "https://sleep-c33f4.firebaseio.com",
+    "project_id": "sleep-c33f4",
+    "storage_bucket": "sleep-c33f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445846667535:android:e52be02a4db9a5e356fe7a",
+        "android_client_info": {
+          "package_name": "com.hari.asus.sleep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445846667535-sfa4tp918m6cb8v9s3tull1i91h1fpl3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hari.asus.sleep",
+            "certificate_hash": "892359b39b6b73c1d2b6d3d3b89d529b8c21df62"
+          }
+        },
+        {
+          "client_id": "445846667535-qjnoohirgetffgaaq9lhrtrhc60mnup4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHEml4YOz6c9xnC5V83Y2XuWdYyZ3p5S8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445846667535-qjnoohirgetffgaaq9lhrtrhc60mnup4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

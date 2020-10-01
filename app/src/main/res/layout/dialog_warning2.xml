@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:gravity="center"
+        android:minHeight="120dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+         android:src="@drawable/rocket"
+             />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Weekly Review"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/weekly_w"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input_f"
+            android:ems="10"
+            android:hint="weight gain : Y/N"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/grey"
+            />
+        <EditText
+            android:id="@+id/weekly_m"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+
+            android:background="@drawable/input_f"
+            android:ems="10"
+            android:hint="memory loss : Y/N"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/grey"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/bt_close22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/button_bg"
+
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

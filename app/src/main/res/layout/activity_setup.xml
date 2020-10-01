@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setupActivity">
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bold"
+        android:text="Your Account Here!"
+        android:textColor="@color/grey"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/setup_circleImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/setup_edittext"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+ 
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/input_f"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPasswordsetup"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hello2" />
+
+    <EditText
+        android:id="@+id/editTextTextPasswordsetup"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+
+
+        android:background="@drawable/input_f"
+        android:ems="10"
+        android:hint="Enter 2 day prior shift date "
+
+
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toTopOf="@id/setup_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_edittext" />
+
+    <EditText
+        android:id="@+id/setup_confirm"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/input_f"
+
+        android:ems="10"
+        android:hint="End date  dd/mm/yyyy"
+
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordsetup" />
+    <android.widget.Button
+        android:id="@+id/setup_btn"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/light"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_confirm" />
+    <TextView
+        android:id="@+id/hello2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+android:layout_marginBottom="30dp"
+        
+        android:fontFamily="@font/light"
+        android:text="Select your profile pic"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/setup_circleImageView"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/setup_edittext"
+        app:layout_constraintStart_toEndOf="parent" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/light"
+        android:text="Star Trek - To Infinity and Beyond!"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/imageView3"
+
+        app:layout_constraintStart_toEndOf="@id/imageView4" />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_circleImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+       
+        app:layout_constraintBottom_toTopOf="@+id/hello2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello"
+        
+        android:src="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:srcCompat="@drawable/alien" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@id/textView"
+        app:srcCompat="@drawable/monster1" />
+
+    <FrameLayout
+        android:id="@+id/setup_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:animateLayoutChanges="true"
+        android:background="#000000"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.agrawalsuneet.dotsloader.loaders.AllianceLoader
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:alliance_animDuration="500"
+            app:alliance_distanceMultiplier="4"
+            app:alliance_dotsRadius="15dp"
+            app:alliance_drawOnlyStroke="false"
+            app:alliance_firstDotsColor="@color/red"
+            app:alliance_secondDotsColor="@color/colorPrimary"
+            app:alliance_strokeWidth="4dp"
+            app:alliance_thirdDotsColor="#FFEB3B" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
